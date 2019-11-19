@@ -43,4 +43,5 @@ before_install:
 
 install: true
 
-script: mvn clean install -q -Pitests
+script: mvn clean install -DskipTests -q -Pitests
+        mvn test
